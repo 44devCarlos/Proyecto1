@@ -1,0 +1,7 @@
+Color del fondo
+background: linear-gradient(180deg, #431B19 0.05%, #1A1919 101.54%);
+
+Color del Header 
+background: linear-gradient(180deg, #9C6D46 0%, #684A31 100%);
+
+

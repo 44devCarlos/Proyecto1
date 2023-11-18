@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pago</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var fechaActual = new Date();
+            var tiempoDeCompra = 15;
+            
+            var fechaFinalizacion = new Date(fechaActual.getTime() + tiempoDeCompra * 60000);
+            
+            function actualizarContador() {
+                var ahora = new Date();
+                var diferencia = fechaFinalizacion - ahora;
+                
+                var minutosRestantes = Math.floor(diferencia / (1000 * 60));
+                var segundosRestantes = Math.floor((diferencia % (1000 * 60)) / 1000);
+                
+                var tiempoRestante = minutosRestantes + "m " + segundosRestantes + "s";
+                
+                document.getElementById("contador-tiempo").innerText = tiempoRestante;
+                
+                if (diferencia > 0) {
+                    setTimeout(actualizarContador, 1000);
+                } else {
+                    alert("¡El tiempo de compra ha expirado!");
+                }
+            }
+            actualizarContador();
+        });
+    </script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <button>Inicio</button>
+            <button>Cines</button>
+            <button>Cartelera</button>
+            <button>Preguntas frecuentes</button>
+        </nav>
+    </header>
+
+    <section>
+        <img id="logo" src="newlogowhite.png" alt="Logo">
+        <div class="barra"> 
+            <input class="search-bar" type="text" placeholder="Buscar tu película" >
+            <img class="search-logo" src="Recursos Proyect Cine/Iconos/busqueda-de-lupa (1).png" alt="Usuario">
+        </div>   
+        <div class="user-section">
+            <img class="user-logo" src="Recursos Proyect Cine/Iconos/usuario.png" alt="Usuario">
+            <span>Usuario</span>
+        </div>
+    </section>
+    
+    <div>
+        <div class="step-section">
+            <div class="step paso-1"><span>Paso 1</span><br><p class="todasmienten">Seleccion de boletos</p></div>
+            <div class="step paso-2"><span >Paso 2</span><br><p class="todasmienten">Selecciona tus asientos</p></div>
+            <div class="step active paso-3"><span>Paso 3</span><br><p class="todasmienten">Forma de pago</p></div>
+        </div>
+
+        <div>
+            <form>
+                <div style="display: flex; gap: 20px;">
+                    <div style="flex: 1;">
+                        <div><h1>Informacion Personal</h1></div>
+                        <label for="nombre"><p>Nombre:</p></label>
+                        <input type="text" id="nombre" name="nombre" required>
+
+                        <label for="apellido"><p>Apellido:</p></label>
+                        <input type="text" id="apellido" name="apellido" required>
+
+                        <label for="club"><p>Tarjeta Club Filmania:</p></label>
+                        <input type="text" id="club" name="club" required>
+
+                        <label for="correo"><p>Correo Electrónico:</p></label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <div style="flex: 1;">
+                        <div><h1>Informacion de la tarjeta</h1></div>
+                        <label for="tarjeta"><p>Número de tarjeta:</p></label>
+                        <input type="text" id="tarjeta" name="tarjeta" required>
+                        <div class="input-group">
+                            <div>
+                                <label for="fecha"><p>Fecha de vencimiento:</p></label>
+                                <input type="text" id="fecha" name="fecha" placeholder="MM/AA" required>
+                            </div>
+                            <div>
+                                <label for="cvv"><p>CVV:</p></label>
+                                <input type="text" id="cvv" name="cvv" required>
+                            </div>
+                        </div>
+                        <label style="display: flex; align-items: center;">
+                            <input type="checkbox" id="terminos" name="terminos" required>
+                            <p>He leído y estoy de acuerdo con los <a href="enlace_a_terminos_y_condiciones.html" target="_blank">Términos y Condiciones y Aviso de Privacidad</a></p>
+                        </label> 
+                    </div>
+                </div>
+                <div class="contador"><p id="contador-tiempo" style="color: white; font-size: 18px; margin-top: 10px;">Tiempo de Compra:</p></div>
+                <div class="button-container">
+                    <button type="submit">Atras</button>
+                    <button type="submit">Pagar</button>
+                </div>
+            </form>  
+        </div>
+    </div>
+
+</body>
+</html>

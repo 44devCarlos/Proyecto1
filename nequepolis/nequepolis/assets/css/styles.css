@@ -1,0 +1,184 @@
+@charset "UTF-8";
+.encabezado {
+  display: flex;
+  margin: -8px -8px 0px -8px;
+  justify-content: center;
+  background: radial-gradient(circle, #d34343 35%, #6e0808 100%), linear-gradient(to right, #6e0808 0%, #d34343 50%, #6e0808 100%);
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: 0px 0px 20px 0px #1d1818;
+}
+.encabezado .contenedor-imagen {
+  height: 175px;
+  width: 190px;
+  margin: 20px 0px 0px;
+}
+.encabezado .contenedor-imagen img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body {
+  background-image: url(https://e1.pxfuel.com/desktop-wallpaper/273/943/desktop-wallpaper-theater-group-cinema-hall.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.zona-main {
+  display: block;
+  justify-content: center;
+}
+.zona-main .zona-registro {
+  background-color: rgba(235, 229, 229, 0.85);
+  height: 600px;
+  width: 600px;
+  margin: 25px auto 25px auto;
+  padding: 0px 10px 0px 0px;
+  border-radius: 35px;
+}
+.zona-main .zona-registro .encabezado-zr {
+  position: relative;
+  justify-items: center;
+  text-align: center;
+  padding: 15px;
+}
+.zona-main .zona-registro .encabezado-zr .titulo-zr, .zona-main .zona-registro .encabezado-zr .subtitulo-zr {
+  position: absolute;
+  font-size: 15px;
+  width: 580px;
+}
+.zona-main .zona-registro .encabezado-zr .titulo-zr {
+  font-family: "Josefin Sans", sans-serif;
+  top: 35%;
+}
+.zona-main .zona-registro .encabezado-zr .subtitulo-zr {
+  font-family: "Quicksand", sans-serif;
+  top: 45px;
+  border-bottom: solid 2px;
+}
+.zona-main .zona-registro .datos-usuario {
+  width: 100%;
+  position: relative;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  /*Defino la fuente, la posicion*/
+  /* Inputs y su separacion de a la izquierda del div datos usuarios*/
+  /* Inputs y su separacion de a la derecha del div datos usuarios*/
+  /* Inputs y su altura de 40px*/
+  /*Primera Fila Nombre y Apellido*/
+  /*Segunda Fila Fecha de Nacimiento y Genero*/
+  /*Tercera Fila Numero ID y Celular*/
+  /*Cuarta Fila Separador de informacion*/
+  /*Quinta Fila Correo electronico*/
+  /*Quinta Fila Contraseña y Confirmar Contraseña*/
+  /*Sexta Fila Boton Registrarse*/
+}
+.zona-main .zona-registro .datos-usuario .nombre input, .zona-main .zona-registro .datos-usuario .apellido input, .zona-main .zona-registro .datos-usuario .fecha-nacimiento input, .zona-main .zona-registro .datos-usuario .genero select,
+.zona-main .zona-registro .datos-usuario .fecha-nacimiento input, .zona-main .zona-registro .datos-usuario .genero select, .zona-main .zona-registro .datos-usuario .numeroID input, .zona-main .zona-registro .datos-usuario .numero-celular input,
+.zona-main .zona-registro .datos-usuario .correo-electronico input, .zona-main .zona-registro .datos-usuario .contrasena input, .zona-main .zona-registro .datos-usuario .confirma-contrasena input,
+.zona-main .zona-registro .datos-usuario .boton-registro input {
+  font-family: "Quicksand", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  padding-left: 10px;
+}
+.zona-main .zona-registro .datos-usuario .nombre input, .zona-main .zona-registro .datos-usuario .numeroID input, .zona-main .zona-registro .datos-usuario .fecha-nacimiento input, .zona-main .zona-registro .datos-usuario .correo-electronico input,
+.zona-main .zona-registro .datos-usuario .contrasena input {
+  left: 10px;
+}
+.zona-main .zona-registro .datos-usuario .apellido input, .zona-main .zona-registro .datos-usuario .genero select, .zona-main .zona-registro .datos-usuario .numero-celular input, .zona-main .zona-registro .datos-usuario .confirma-contrasena input {
+  right: 10px;
+}
+.zona-main .zona-registro .datos-usuario .nombre input, .zona-main .zona-registro .datos-usuario .apellido input, .zona-main .zona-registro .datos-usuario .fecha-nacimiento input,
+.zona-main .zona-registro .datos-usuario .numeroID input, .zona-main .zona-registro .datos-usuario .numero-celular input, .zona-main .zona-registro .datos-usuario .correo-electronico input,
+.zona-main .zona-registro .datos-usuario .contrasena input, .zona-main .zona-registro .datos-usuario .confirma-contrasena input, .zona-main .zona-registro .datos-usuario .boton-registro input {
+  height: 40px;
+}
+.zona-main .zona-registro .datos-usuario .nombre input, .zona-main .zona-registro .datos-usuario .apellido input {
+  width: 260px;
+  top: 100px;
+  padding-left: 10px;
+}
+.zona-main .zona-registro .datos-usuario .fecha-nacimiento label, .zona-main .zona-registro .datos-usuario .genero label {
+  position: absolute;
+  width: 45%;
+  top: 165px;
+}
+.zona-main .zona-registro .datos-usuario .fecha-nacimiento label {
+  left: 12px;
+}
+.zona-main .zona-registro .datos-usuario .genero label {
+  right: 15px;
+}
+.zona-main .zona-registro .datos-usuario .fecha-nacimiento input, .zona-main .zona-registro .datos-usuario .genero select {
+  top: 190px;
+}
+.zona-main .zona-registro .datos-usuario .fecha-nacimiento input {
+  width: 44%;
+}
+.zona-main .zona-registro .datos-usuario .genero select {
+  width: 46%;
+  height: 44px;
+}
+.zona-main .zona-registro .datos-usuario .numeroID input, .zona-main .zona-registro .datos-usuario .numero-celular input {
+  width: 260px;
+  top: 250px;
+}
+.zona-main .zona-registro .datos-usuario .separador {
+  position: absolute;
+  height: 0px;
+  border: solid 1px;
+  width: 580px;
+  top: 315px;
+  left: 15px;
+}
+.zona-main .zona-registro .datos-usuario .correo-electronico input {
+  width: 567px;
+  top: 335px;
+}
+.zona-main .zona-registro .datos-usuario .contrasena input, .zona-main .zona-registro .datos-usuario .confirma-contrasena input {
+  width: 260px;
+  top: 400px;
+}
+.zona-main .zona-registro .datos-usuario .boton-registro input {
+  border-radius: 15px;
+  font-weight: bold;
+  color: #1d1818;
+  background: #FFD700;
+  width: 150px;
+  left: 225px;
+  top: 470px;
+  cursor: pointer;
+}
+.zona-main .zona-registro .datos-usuario #boton-registro:hover {
+  font-weight: bold;
+  background: #1d1818;
+  color: #FFD700;
+  transition: 0.5s all;
+  cursor: pointer;
+}
+.zona-main .zona-registro .datos-usuario .cuestion {
+  position: absolute;
+  height: 0px;
+  width: 580px;
+  top: 500px;
+  left: 205px;
+}
+
+.pie-de-pagina {
+  display: flex;
+  box-shadow: 20px 0px 0px 0px #1d1818;
+  font-family: "Josefin Sans", sans-serif;
+  background-image: url(file:///C:/Users/Aylin/Downloads/edgar%20universidad/DS%20IV/Proyecto1/nequepolis/resources/footer.jpg);
+  padding: 10px 10px 10px 50px;
+  margin: 5px -8px -8px -8px;
+  color: white;
+}
+.pie-de-pagina .columna2 {
+  margin-left: 50px;
+}
+
+/*# sourceMappingURL=styles.css.map */

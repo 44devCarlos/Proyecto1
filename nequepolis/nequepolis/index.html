@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets\css\styles.css">
+    <link rel="icon" href="resources/LOGO.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    <title>Registrar Cuenta</title>
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <div class="contenedor-imagen">
+                <img src="resources/LOGO.png" alt="Nequepolis">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="zona-main">
+            <div class="zona-registro">
+                <div class="encabezado-zr">
+                    <div class="titulo-zr">
+                        <h1>
+                            Registrate
+                        </h1>    
+                    </div>
+                    <div class="subtitulo-zr">
+                        <h2>
+                            Ingrese sus datos personales.
+                        </h2>
+                    </div>    
+                </div>
+                <div class="datos-usuario">
+                    <form action="" method="post">
+                        <div class="nombre">
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                        </div>
+                        <div class="apellido">
+                            <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>
+                        </div>
+                        <div class="fecha-nacimiento">
+                            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                        </div>
+                        <div class="genero">
+                            <label for="genero">Genero:</label>
+                            <select id="genero" name="genero">
+                                <option>-Seleccionar-</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Femenino">Femenino</option>
+                                <option value="Otros">Otros</option>
+                            </select>
+                        </div>
+                        <div class="numeroID">
+                            <input type="text" id="numero-id" name="numero-id" placeholder="Numero ID" required>
+                        </div>
+                        <div class="numero-celular">
+                            <input type="tel" id="celular" name="celular" placeholder="Numero de Celular/507" required>
+                        </div>
+                        <div class="separador">
+                        </div>
+                        <div class="correo-electronico">
+                            <input type="email" id="correo" name="correo" placeholder="Correo Electronico/@example.com" required>
+                        </div>
+                        <div class="contrasena">
+                            <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+                        </div>
+                        <div class="confirma-contrasena">
+                            <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" placeholder="Confirmar Contraseña" required>
+                        </div>
+                        <div class="boton-registro">
+                            <input type="submit" id="boton-registro" value="Registrarte">
+                        </div>
+                        <div class="cuestion">
+                            <h4>
+                                <a href="COLOCAR AQUI EL LINK A LA PAGINA INICIO SESION">
+                                    ¿Ya tienes una cuenta?
+                                </a>
+                            </h4>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="pie-de-pagina">
+            <div class="columna1">
+                <p>
+                    Preguntas Frecuentes
+                </p>
+                <p>
+                    Atención al Cliente
+                </p>
+            </div>
+            <div class="columna2">
+                <p>
+                    Politica de Privacidad
+                </p>
+                <p>
+                    Politica de Empresa
+                </p>
+                <p>
+                    Acerca De
+                </p>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>
